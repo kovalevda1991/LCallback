@@ -8,10 +8,6 @@
 #define __SIZE_TYPE__ size_t
 #define PACK __attribute__((packed, aligned(1)))
 #endif
-/**
- * При -O2 один уникальный экземпляр требует 16 байт RAM и в среднем 60 - 90 байт FLASH
- * Lambda функции 16 байт RAM и 40 - 60 байт FLASH
- */
 
 template<typename R, typename ...Args>
 class LCallback {
